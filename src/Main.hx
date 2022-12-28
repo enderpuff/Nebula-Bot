@@ -22,6 +22,7 @@ import discord_js.User;
 import systems.commands.Hi;
 import systems.commands.Boop;
 import systems.commands.Test;
+import systems.commands.ServerLink;
 
 
 class Main {
@@ -34,7 +35,7 @@ class Main {
 			phases: [
 				{
 					name: 'main',
-					systems: [Hi, Boop, Test]
+					systems: [Hi, Boop, Test, ServerLink]
 				}
 			]
 		});

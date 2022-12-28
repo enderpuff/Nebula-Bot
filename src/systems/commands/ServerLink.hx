@@ -3,16 +3,12 @@ package systems.commands;
 import discord_builder.BaseCommandInteraction;
 import components.Command;
 
-class Boop extends CommandBase {
+class ServerLink extends CommandBase {
 	function run(command:Command, interaction:BaseCommandInteraction) {
-		switch (command.content) {
-			case Boop(user): 
-				interaction.reply('Boop! <@${user.id}>');
-			default:
-		}
+		interaction.reply('This is the server invite!\nhttps://discord.gg/t7pQqs47Aa');
 	}
 
 	function get_name():String {
-		return 'boop';
+		return 'serverlink';
 	}
 }
